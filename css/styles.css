@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #ffff;
+    --second-color:#2F303A;
+    --accent-color:#2196F3;
+}
+
 
 body{
     font-family: "Roboto"   ;
@@ -7,9 +13,11 @@ body{
 a{
     text-decoration: none   ;
 }
+  
+/*-----HEADER-----*/
 
 .header-logo{
-font-weight: 700;
+   font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 color: #000000;
@@ -23,6 +31,12 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 color: #000000;
+cursor: pointer;
+}
+
+.header-link:hover,
+.header-link:focus{
+    color:#2196F3;
 }
 
 .header-mail{
@@ -40,6 +54,8 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 }
+
+/*-----MAIN-----*/
 
 .hero{
     background-color: #2F303A;
@@ -107,6 +123,7 @@ text-align: center;
 }
 
 .title-sec3{
+    text-align: center;
   color:#212121;  
  font-weight: 700;
 font-size: 36px;
@@ -121,6 +138,7 @@ font-size: 36px;
 line-height: 42px;
 letter-spacing: 0.03em;
 color: #212121;
+text-align: center;
 }
 
 .team-name{
@@ -143,6 +161,8 @@ color: #757575;
  
 }
 
+/*-----FOOTER-----*/
+
 .footer{
     background-color: #2F303A;
 }
@@ -152,7 +172,7 @@ color: #757575;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: #2196F3;  
 }
 
 .studio{
@@ -176,3 +196,50 @@ line-height: 24px;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+
+/*-----portfolio-----*/
+
+.btn-portfolio{
+    width: 112px;
+height: 38px;
+left: 726px;
+top: 174px;
+color: #F5F4FA;
+cursor: pointer;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    color: #2196F3;
+}
+
+.text-btn-port{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+
+
+.title-port{
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.descrip-port{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: #757575;
+
+}
+    
