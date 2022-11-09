@@ -1,8 +1,178 @@
 
-body {
-    font-family: 'Roboto' sans-serif ;
+body{
+    font-family: "Roboto"   ;
+    color: #F5F5F5;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none   ;
+}
+
+.header-logo{
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+color: #000000;
+}
+.logo{
+    color: #2196F3;
+}
+
+.header-link{
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+}
+
+.header-mail{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+color: #757575;
+}
+
+.header-tel{
+ color: #757575;
+ 
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.hero{
+    background-color: #2F303A;
+    
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+}
+
+.sub-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #ffff;
+}
+
+.list{
+    list-style: none;
+}
+
+.social-links:hover,
+.social-links:focus {
+    color:#2196F3;
+}
+    
+.titles{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.descrip{
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.main-btn{
+    
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+}
+
+.text-btn{
+    font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #ffff;
+text-align: center;
+}
+
+.title-sec3{
+  color:#212121;  
+ font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+}
+
+.team{
+    
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-name{
+    font-family: 'Roboto';
+
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-position{
+    
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: #757575;
+ 
+}
+
+.footer{
+    background-color: #2F303A;
+}
+
+.footer-logo{
+   font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.studio{
+    color: #FFFFFF;
+}
+
+.footer-adress{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer-links{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
