@@ -11,7 +11,7 @@
 
 
 body{
-    font-family: "Roboto" sans-serif  ;
+    font-family: "Roboto", sans-serif  ;
     color: var(--back-color);
     font-size: 14px;
     letter-spacing: 0.03;
@@ -25,7 +25,7 @@ body{
 /*-----HEADER-----*/
 
 .header-logo{
-    font-family: 'Relaway Bold' sans-serif;
+    font-family: 'Relaway Bold', sans-serif;
    font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -190,6 +190,7 @@ color: var(--p-color);
 }
 
 .footer-logo{
+   font-family:'Relaway Bold', sans-serif;
    font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -221,7 +222,7 @@ color: rgba(255, 255, 255, 0.6);
 /*-----portfolio-----*/
 
 .btn-portfolio{
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 112px;
 height: 38px;
 left: 726px;
