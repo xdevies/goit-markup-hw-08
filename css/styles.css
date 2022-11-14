@@ -25,7 +25,7 @@ body{
 /*-----HEADER-----*/
 
 .header-logo{
-    font-family: 'Relaway', sans-serif;
+    font-family: 'Raleway', sans-serif;
    font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -190,7 +190,7 @@ color: var(--p-color);
 }
 
 .footer-logo{
-   font-family:'Relaway Bold', sans-serif;
+   font-family:'Raleway', sans-serif;
    font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
