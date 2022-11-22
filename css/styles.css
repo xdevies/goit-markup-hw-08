@@ -77,6 +77,9 @@ align-items: center;
 }
 
 
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-logo{
     
@@ -331,7 +334,7 @@ margin-bottom: 50px;
 
 
 .team-name{
-    margin-top: 30px;
+    
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Roboto';
@@ -344,7 +347,7 @@ color: var(--title-color);
 
 .team-position{
     
-padding-bottom: 30px;
+
 font-size: 16px;
 line-height: 1.1;
 letter-spacing: 0.03em;
@@ -421,9 +424,7 @@ color: rgba(255, 255, 255, 0.6);
 /*-----portfolio-----*/
 
 
-.header{
-    border: 1px solid #ECECEC;
-}
+
 
 
 .btn-list{
@@ -446,7 +447,7 @@ font-weight: 500;
     padding: 6px 22px;
 
     border-radius: 4px;
-    margin-right: 8px;
+    
     border: 0mm;
 }
 
@@ -500,7 +501,7 @@ margin-bottom: 4px;
     border-bottom: 1px solid #EEEE;
     border-right: 1px solid #EEEE;
     border-left: 1px solid #EEEE;
-    padding: 20px 24px 4px 24px ;
+    padding: 20px 24px 20px 24px ;
       
 }
   
