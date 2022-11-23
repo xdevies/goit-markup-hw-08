@@ -54,7 +54,7 @@ img{
     width: 1200px;
     padding-right:15px;
     padding-left: 15px;
-    margin: auto;
+    margin: 0 auto;
     
 }
 .section{
@@ -178,7 +178,7 @@ line-height: 1.1;
 height: 600px;
 padding-top: 200px;
 padding-bottom: 200px;
- background-image: url('../img/background.jpg');
+ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
 background-repeat: no-repeat;
 background-size: cover;
  background-position: center;
@@ -335,6 +335,8 @@ text-align: center;
 margin-bottom: 50px;
 }
 
+
+
 .team-list{
     display: flex;
 }
@@ -360,7 +362,7 @@ font-size: 16px;
 line-height: 1.1;
 letter-spacing: 0.03em;
 color: var(--p-color);
- 
+ margin-bottom: 16px;
 }
 
 .member{
@@ -376,6 +378,42 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
 .team-list > .item:not(:last-child) {
     margin-right: 30px;
+ }
+
+
+
+.team-soc-list{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.team-soc-items{
+    width: 44px;
+    height: 44px;
+}
+
+.team-soc-items:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-soc-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#AFB1B8;
+}
+
+.team-soc-link:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+    
+ .team-soc-icons{
+    fill: currentColor;
  }
 
 /*-----FOOTER-----*/
