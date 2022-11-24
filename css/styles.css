@@ -224,7 +224,29 @@ background-size: cover;
 .social-links:focus {
     color:var(--accent-color)
 }
-    
+ 
+
+.block-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.block-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 270px;
+height: 120px;
+background-color: var(--back-sec-color)
+
+}
+
+.block-items:not(:last-child){
+    margin-right: 30px;
+}
+
 .titles{
     display: flex;
 font-weight: 700;
@@ -234,7 +256,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--title-color);
 margin-bottom: 10px;
-
+margin-top: 30px;
 }
 
 .descrip{
@@ -415,6 +437,56 @@ align-items: center;
  .team-soc-icons{
     fill: currentColor;
  }
+
+.title-client{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    
+}
+
+
+.clients-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.client-items{
+    width: 170px;
+    height: 92px;
+} 
+
+
+
+.client-items:not(:last-child){
+    margin-right: 30px;
+}
+
+.client-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.client-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+    
+.company-icons{
+    fill: currentColor;
+}
 
 /*-----FOOTER-----*/
 
