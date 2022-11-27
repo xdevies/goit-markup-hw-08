@@ -148,6 +148,7 @@ color: var(--p-color)
 }
 
 .header-tel{
+    
  color: var(--p-color); 
 font-weight: 500;
 font-size: 14px;
