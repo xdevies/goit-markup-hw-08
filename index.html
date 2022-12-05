@@ -151,6 +151,7 @@
          
           </ul>
         </div> 
+      </li>
 
          <li class="member item"><img src="./img/img1.jpg" 
           alt="Ольга Рєпіна"
@@ -184,7 +185,9 @@
           
         
           </ul>
-        </div> 
+        </div>
+         </li> 
+
           <li class="member item"><img src="./img/img2.jpg"
            alt="Микола Тарасов"
            width="270"
@@ -216,7 +219,7 @@
             </a></li>
           </ul>
         </div>
-        
+        </li>
            <li class="member item"> <img src="./img/img3.jpg" 
            alt="Михайло Єрмаков"
            width="270"
@@ -248,7 +251,8 @@
             </a></li>
           </ul>
         </div>
-       
+      </li>
+      </div>
     </section>
   <section class="section clients">
   <h2 class="title-client">Постійні клієнти</h2>
@@ -336,6 +340,18 @@
       <use href="./img/icons.svg#icon-close-black"></use>
       </svg>
     </button>
+    <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
+    <form action="">
+      <input type="text" class="modal-input">
+      <input type="tel" class="modal-input"
+      required  value="+380" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      >
+      <input type="email" class="modal-input" required>
+      <input type="text" class="modal-input"
+      required   placeholder="Введіть текст" name="comment"
+      >
+      <button type="submit">Відправити</button>
+    </form>
   </div>
  </div>
  <script src="./js/modal.js"></script>
