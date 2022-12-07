@@ -341,17 +341,37 @@
       </svg>
     </button>
     <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-    <form action="">
-      <input type="text" class="modal-input">
-      <input type="tel" class="modal-input"
-      required  value="+380" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-      >
-      <input type="email" class="modal-input" required>
-      <input type="text" class="modal-input"
-      required   placeholder="Введіть текст" name="comment"
-      >
-      <button type="submit">Відправити</button>
-    </form>
+    <div class="form-field" >
+      <label for="name" class="form-label">Ім'я</label>
+      <input type="text" name="username" id="username" class="modal-input">
+      <svg  width="18" height="18"  class="modal-form-svg">
+        <use href="./img/icons.svg#icon-name-form"></use>
+      </svg>
+    </div>
+    <div class="form-field">
+      <label for="tel" class="form-label">Телефон</label>                                                                                                                          
+      <input type="tel" name="telephone" id="tel" class="modal-input" />
+       <svg width="18" height="18" class="modal-form-svg">
+        <use href="./img/icons.svg#icon-phone-form" ></use>
+       </svg>
+    </div>
+    <div class="form-field">
+      <label for="email" class="form-label">Пошта</label>
+      <input type="email" name="email" id="email" class="modal-input">
+      <svg width="18" height="18" class="modal-form-svg">
+        <use href="./img/icons.svg#icon-email-form"></use>
+      </svg>
+    </div>
+    <div class="form-field">
+      <label class="form-label">Коментар</label>
+       <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal-text" ></textarea>
+    </div>
+  <div>
+    <label for="policy" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-link" href="">Умови договору</a>
+      <input type="checkbox" id="policy" />
+    </label>
+  </div>
+  <button type="submit" class="modal-input-btn">Відправити</button>
   </div>
  </div>
  <script src="./js/modal.js"></script>
