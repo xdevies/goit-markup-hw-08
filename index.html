@@ -118,7 +118,7 @@
     <section class="sec-team section">
       <div class="container">
         <h2 class="team">Наша команда</h2>
-        <ul class="list team-list">
+      <ul class="list team-list">
         <li class="member item"><img src="./img/img0.jpg"
           alt="Ігор Дем'яненко"
           width="270"
@@ -252,7 +252,7 @@
           </ul>
         </div>
       </li>
-      </div>
+      
     </section>
   <section class="section clients">
   <h2 class="title-client">Постійні клієнти</h2>
@@ -333,7 +333,7 @@
    </ul></div>
 
 <form  class="sub-form">
-<div class="sub-block">
+  <div class="sub-block">
    <label for="email" class="sub-email">Підпишіться на розсилку</label>
    <input type="text" name="mail" id="mail"  placeholder="E-mail" class="sub-input">
   </div>
@@ -342,8 +342,8 @@
         <use href="./img/icons.svg#icon-send"></use>
       </svg>
     </button>
-  </div>
-  </form>
+  
+</form>
 </div>
  </footer>
  <div class="backdrop is-hidden"  data-modal>
@@ -354,9 +354,9 @@
       </svg>
     </button>
     <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-    <form action="">
+  <form>
     <div class="form-field" >
-      <label for="name" class="form-label">Ім'я</label>
+      <label  class="form-label">Ім'я</label>
       <div class="modal-input-wrapper">
       <input type="text" name="username" id="username" class="modal-input">
       <svg  width="18" height="18"  class="modal-form-svg">
@@ -386,14 +386,15 @@
       <label class="form-label">Коментар</label>
        <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal-text" ></textarea>
     </div>
-  <div class="checkbox">
-    <input type="checkbox" id="policy" />
+   <div class="checkbox">
+    <input  class="checkbox-input"  type="checkbox" id="policy" />
+    
     <label for="policy" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-link" href="">Умови договору</a>
     </label>
-  </div>
-  <button type="submit" class="modal-input-btn">Відправити</button>
-  </div>
-</form>
+   </div>
+    <button type="submit" class="modal-input-btn">Відправити</button>
+  
+  </form>
  </div>
  <script src="./js/modal.js"></script>
 </body>
