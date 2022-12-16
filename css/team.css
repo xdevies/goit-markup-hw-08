@@ -1,0 +1,89 @@
+.team-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sec-team {
+  background-color: var(--back-sec-color);
+  display: flex;
+}
+
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-name {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--p-color);
+  margin-bottom: 16px;
+}
+
+.member {
+  flex-basis: calc(25% - 30px);
+  width: 270px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-color);
+}
+
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-soc-items {
+  width: 44px;
+  height: 44px;
+}
+.team-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+.team-soc-link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.team-soc-icons {
+  fill: currentColor;
+}/*# sourceMappingURL=team.css.map */

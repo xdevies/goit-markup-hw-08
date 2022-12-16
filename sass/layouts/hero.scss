@@ -1,0 +1,161 @@
+.hero-box{
+    width: 696px;
+   
+}
+
+.hero{
+    
+    background-color: var(--second-color);
+height: 600px;
+padding-top: 200px;
+padding-bottom: 200px;
+ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+ background-position: center;
+ max-width: 1600px;
+ margin-right: auto;
+ margin-left: auto;
+ 
+}
+
+
+    
+
+
+
+.list{
+    list-style: none;
+ 
+}
+
+.list-sec li:not(:last-child){
+    margin-right:30px;  
+}
+    
+.list-sec{
+    display: flex;
+    
+    
+}
+
+
+
+.social-links:hover,
+.social-links:focus {
+    color:var(--accent-color)
+}
+ 
+
+.block-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.block-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 270px;
+height: 120px;
+background-color: var(--back-sec-color);
+   &:not(:last-child){
+    margin-right: 30px;
+}
+}
+
+
+
+.titles{
+    display: flex;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--title-color);
+margin-bottom: 10px;
+margin-top: 30px;
+}
+
+.descrip{
+    display: flex;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color:var(--p-color);
+max-width: 270px;
+}
+
+
+
+
+
+.hero-cont{
+    padding-top: 0;
+    
+}
+
+
+.title-sec {
+text-align: center;
+color:var(--title-color); 
+ font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+justify-content: center;
+margin-bottom: 50px;
+ & .container{
+    display: flex;
+ padding-top: 0px;
+ 
+}
+}
+
+
+
+
+
+.images li:not(:last-child){
+   margin-right: 30px;
+   
+}
+   
+.images {
+    display: flex;
+    & img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    & .item{
+        position: relative;
+        
+    }
+}
+
+
+
+
+
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:370px;
+    height: 70px;
+    margin: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+.btn-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+   
+}
+
+
+
+.btn-portfolio{
+    font-family: 'Roboto', sans-serif;
+ color: #F5F4FA;
+ cursor: pointer;
+ font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    
+    border: 0mm;
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+ }
+}
+
+
+
+
+.last{
+    margin-right: 0;
+}

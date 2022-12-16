@@ -1,0 +1,84 @@
+.sub-block{
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    margin-left: auto;
+    & label{
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.sub-input{
+    width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: var(--second-color);
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 16px;
+padding-right: 0;
+color: var(--primary-color);
+
+}
+
+.sub-input::placeholder{
+    width: 47px;
+height: 20px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+
+}
+
+.sub-btn{
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+   padding-top: 10px;
+   padding-bottom: 10px;
+    cursor: pointer;
+    transition-timing-function: var(--timing-function);
+    transition: 250ms;
+   &:focus,
+    &:hover{
+    background-color: #188ce8; 
+}
+}
+
+
+.sub-form{
+    display: flex;
+    width: 570px;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.icon-send{
+    margin-left: 10px;
+}
+
+.area-and-btn{
+    margin-top: 20px;
+}

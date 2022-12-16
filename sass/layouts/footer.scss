@@ -1,0 +1,54 @@
+.footer-section{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer{
+    background-color:var(--second-color);
+}
+
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 20px;
+   font-family:'Raleway', sans-serif;
+   font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: var(--accent-color); 
+
+}
+
+.studio{
+    color: var(--primary-color);
+}
+
+.address-list > .item:not(:last-child) {
+    margin-bottom: 9px;
+ }
+
+
+
+.footer-adress{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer-links{
+font-style: normal;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;  
+}
+ 
