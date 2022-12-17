@@ -44,14 +44,14 @@
     }
     
     
-    .header-list .link-current{
+    .navigation__list .link-current{
         position: relative;
         color: var(--accent-color);
         
      } 
 
 
-    .header-list {
+     .navigation__list {
     
         @extend %flex-align;
         gap: 50px;
@@ -84,7 +84,7 @@
 
     
     
-    .header-list .link.current::after{
+    .navigation__list .link.current::after{
         display: block;
         position: absolute;
         bottom: 0;
@@ -152,12 +152,11 @@
     
     
     
-    .header-list .link{
+    .navigation__list .link{
         position: relative;
         display: block;
       padding-top: 32px; 
       padding-bottom: 32px;   
-    
      text-decoration: none;
      color:var(--title-color);
      font-weight: 500;
