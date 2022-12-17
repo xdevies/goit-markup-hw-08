@@ -1,5 +1,5 @@
 .btn-list{
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
@@ -15,7 +15,7 @@
  font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
+    @extend %flex-align;
     letter-spacing: 0.03em;
     color: #212121;
     padding: 6px 22px;

@@ -1,5 +1,5 @@
 .cards {
-    display: flex;
+    @extend %flex-align;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;

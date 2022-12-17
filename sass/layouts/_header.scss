@@ -1,6 +1,5 @@
 .header .container{
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     }
     
     
@@ -31,40 +30,47 @@
         
         
         align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    cursor: pointer;
-    color: var(--link-color)
-    
+      padding-top: 32px;
+      padding-bottom: 32px;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.1;
+     cursor: pointer;
+     color: var(--link-color);
+     &:hover,
+     &:focus{
+         color: var(--accent-color)
+     }
     }
     
+    
+    .header-list .link-current{
+        position: relative;
+        color: var(--accent-color);
+        
+     } 
+
+
     .header-list {
-        display:flex;
-        align-items: center;
+    
+        @extend %flex-align;
         gap: 50px;
         &:not(:last-child){
             margin-left: 50px;  
         }
 
          
-      & .link-current{
-        color: var(--accent-color);
-        position: relative;
-     } 
 
        & .link:hover,
         & .link:focus{
         color: var(--accent-color);
      }
 
-      
+       
 
     }
     
-
+    
     
     
     
@@ -91,10 +97,7 @@
     }
     
     
-    .header-link:hover,
-    .header-link:focus{
-        color: var(--accent-color)
-    }
+    
     
     .header-mail{
         transition-property: color,fill;
@@ -102,7 +105,7 @@
         transition-timing-function: var(--timing-function);
         letter-spacing: 0.02em;
         display: flex;
-        align-items: center;
+        @extend %flex-align;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -117,23 +120,21 @@
         transition-timing-function: var(--timing-function);
         letter-spacing: 0.02em;
      color: var(--p-color); 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.1;
     }
     
     .contact {
         margin-left: auto;
-        display: flex;
-        align-items: center;
+        @extend %flex-align;
         gap: 50px;
     }
     
     
     
     .nav{
-        display: flex;
-        align-items: center;
+        @extend %flex-align;
     }
     
     .icon-nav{
@@ -152,18 +153,21 @@
     
     
     .header-list .link{
+        position: relative;
         display: block;
-    padding-top: 32px; 
-    padding-bottom: 32px;   
+      padding-top: 32px; 
+      padding-bottom: 32px;   
     
-    text-decoration: none;
-    color:var(--title-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+     text-decoration: none;
+     color:var(--title-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: var(--timing-function);
     }
+    
+   
     

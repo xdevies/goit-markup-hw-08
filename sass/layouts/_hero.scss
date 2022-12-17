@@ -48,16 +48,15 @@ background-size: cover;
  
 
 .block-list{
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;  
+     
 }
 
 
 .block-items{
-    display: flex;
+   @extend %flex-align;
     justify-content: center;
-    align-items: center;
 width: 270px;
 height: 120px;
 background-color: var(--back-sec-color);
@@ -69,7 +68,7 @@ background-color: var(--back-sec-color);
 
 
 .titles{
-    display: flex;
+    @extend %flex-align;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.1;
@@ -143,9 +142,8 @@ margin-bottom: 50px;
 
 
 .label{
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     position: absolute;
     bottom: 0;
     right: 0;

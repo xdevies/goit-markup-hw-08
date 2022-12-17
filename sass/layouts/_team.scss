@@ -68,9 +68,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
 
 .team-soc-list{
-display: flex;
+@extend %flex-align;
 justify-content: center;
-align-items: center;
+
 }
 
 .team-soc-items{
@@ -87,9 +87,8 @@ align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     color:#AFB1B8;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);

@@ -1,5 +1,5 @@
 .sub-block{
-    display: flex;
+    @extend %flex-align;
     flex-direction: column;
     width: 358px;
     margin-left: auto;
@@ -41,9 +41,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .sub-btn{
-    display: flex;
     margin-left: 12px;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
     width: 200px;
     height: 50px;
@@ -69,7 +68,7 @@ color: rgba(255, 255, 255, 0.6);
 
 
 .sub-form{
-    display: flex;
+    @extend %flex-align;
     width: 570px;
     margin-left: auto;
     align-items: flex-end;
