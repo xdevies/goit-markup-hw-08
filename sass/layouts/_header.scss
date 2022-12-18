@@ -26,7 +26,7 @@
         color: var(--accent-color);
     }
     
-    .header-link{
+    .navigation__link{
         
         
         align-items: center;
@@ -55,9 +55,7 @@
     
         @extend %flex-align;
         gap: 50px;
-        &:not(:last-child){
-            margin-left: 50px;  
-        }
+       
 
          
 
@@ -70,7 +68,9 @@
 
     }
     
-    
+    .navigation__list:not(:last-child){
+        margin-left: 50px;  
+    }
     
     
     
@@ -99,7 +99,7 @@
     
     
     
-    .header-mail{
+    .contact__mail{
         transition-property: color,fill;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function);
@@ -114,7 +114,7 @@
     
     }
     
-    .header-tel{
+    .contact__tel{
         transition-property: color,fill;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function);
