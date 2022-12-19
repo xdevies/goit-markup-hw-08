@@ -1,4 +1,4 @@
-.btn-list{
+.port-filter__list{
     @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
@@ -8,7 +8,7 @@
 
 
 
-.btn-portfolio{
+.filter-portfolio__btn{
     font-family: 'Roboto', sans-serif;
  color: #F5F4FA;
  cursor: pointer;

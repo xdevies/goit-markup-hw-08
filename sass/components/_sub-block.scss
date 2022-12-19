@@ -1,5 +1,5 @@
-.sub-block{
-    @extend %flex-align;
+.sub-form__field{
+    display: flex;
     flex-direction: column;
     width: 358px;
     margin-left: auto;
@@ -17,7 +17,7 @@
 
 
 
-.sub-input{
+.sub-form__input{
     width: 358px;
 height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -32,7 +32,7 @@ color: var(--primary-color);
 
 }
 
-.sub-input::placeholder{
+.sub-form__input::placeholder{
     width: 47px;
 height: 20px;
 letter-spacing: 0.03em;
@@ -40,7 +40,7 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
-.sub-btn{
+.sub-form__btn{
     margin-left: 12px;
     @extend %flex-align;
     justify-content: center;
@@ -68,13 +68,13 @@ color: rgba(255, 255, 255, 0.6);
 
 
 .sub-form{
-    @extend %flex-align;
+    display: flex;
     width: 570px;
     margin-left: auto;
     align-items: flex-end;
 }
 
-.icon-send{
+.sub-form__icon{
     margin-left: 10px;
 }
 

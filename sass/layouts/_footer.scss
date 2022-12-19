@@ -24,7 +24,7 @@ color: var(--accent-color);
     color: var(--primary-color);
 }
 
-.address-list > .item:not(:last-child) {
+.address-nav__list > .address-nav__item:not(:last-child) {
     margin-bottom: 9px;
  }
 
@@ -39,7 +39,7 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 
-.footer-links{
+.address-nav__link{
 font-style: normal;
 font-size: 14px;
 line-height: 1.7;

@@ -47,14 +47,14 @@ background-size: cover;
 }
  
 
-.block-list{
+.feature__list{
     @extend %flex-align;
     justify-content: center;
      
 }
 
 
-.block-items{
+.feature__item{
    @extend %flex-align;
     justify-content: center;
 width: 270px;
@@ -67,7 +67,7 @@ background-color: var(--back-sec-color);
 
 
 
-.titles{
+.feature-list__title{
     @extend %flex-align;
 font-weight: 700;
 font-size: 14px;
@@ -79,7 +79,7 @@ margin-bottom: 10px;
 margin-top: 30px;
 }
 
-.descrip{
+.feature-list__descrip{
     display: flex;
 font-weight: 400;
 font-size: 14px;
@@ -89,11 +89,13 @@ color:var(--p-color);
 max-width: 270px;
 }
 
+.section-work_title{
+    color: var(--primary-color);
+}
 
 
 
-
-.hero-cont{
+.work-section{
     padding-top: 0;
     
 }
@@ -118,19 +120,19 @@ margin-bottom: 50px;
 
 
 
-.images li:not(:last-child){
+.work-list li:not(:last-child){
    margin-right: 30px;
    
 }
    
-.images {
+.work-list {
     display: flex;
     & img{
         display: block;
         width: 100%;
         height: auto;
     }
-    & .item{
+    & .work__item{
         position: relative;
         
     }
@@ -141,7 +143,7 @@ margin-bottom: 50px;
 
 
 
-.label{
+.work__text{
     @extend %flex-align;
     justify-content: center;
     position: absolute;

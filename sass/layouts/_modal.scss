@@ -28,7 +28,7 @@
       
 }
 
-.modal .modal-btn{
+.modal .btn-closed{
 
     position: absolute;
     top: 8px;
@@ -45,7 +45,7 @@
 
 
 
-.modal-btn{
+.btn-closed{
     width: 18px;
     height: 18px;
     fill: var(--primary-logo-color);
@@ -58,7 +58,7 @@
 }
 }
 
-.modal-heading{
+.form-title{
 
 font-weight: 700;
 font-size: 20px;
@@ -70,7 +70,7 @@ margin-bottom: 12px;
 
 }
 
-.modal-input{
+.form-item__input{
   width: 448px;  
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -98,7 +98,7 @@ margin-bottom: 12px;
   
 
 
-.modal-input::placeholder{
+.form-item__input::placeholder{
 color: rgba(117, 117, 117, 0.5);
 font-weight: 400;
 font-size: 12px;
@@ -106,7 +106,7 @@ line-height: 14px;
 letter-spacing: 0.01em
 }
 
-.form-label{
+.form-item_title{
    font-weight: 400;
    font-size: 12px;
    line-height: 1.1;
@@ -136,7 +136,7 @@ padding-right: 40px;
 
 
 
-.modal-form-svg{
+.form-item__icon{
    position: absolute;
     top: 50%;
     left: 12px;
@@ -195,7 +195,7 @@ color: var(--accent-color);
 }
 
 
-.modal-input-btn{
+.form-modal__btn{
     @extend %flex-align;
     width: 200px;
     height: 50px;

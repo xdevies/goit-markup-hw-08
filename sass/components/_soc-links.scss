@@ -1,4 +1,4 @@
-.join{
+.socials{
     margin-left: 70px;
 }
 
@@ -14,13 +14,13 @@ margin-bottom: 20px;
 
 }
 
-.footer-soc-list{
+.social__list{
    @extend %flex-align;
 }
 
 
 
-.footer-soc-items{
+.social__item{
      width: 44px;
      height: 44px;
      &:not(:last-child){
@@ -28,7 +28,7 @@ margin-bottom: 20px;
     } 
 }
 
-.footer-soc-link{
+.social__link{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -41,7 +41,7 @@ margin-bottom: 20px;
     }
 }
 
-.footer-soc-icons{
+.social__icon{
     fill: currentColor;
     
 }

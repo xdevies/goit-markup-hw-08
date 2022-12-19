@@ -10,13 +10,13 @@
 }
 
 
-.clients-list{
+.clients__list{
     justify-content: center;
     @extend %flex-align;
    
 }
 
-.client-items{
+.client-list__item{
     width: 170px;
     height: 92px;
     &:not(:last-child) {
@@ -46,6 +46,6 @@
 
 
     
-.company-icons{
+.client__icon{
     fill: currentColor;
 }
