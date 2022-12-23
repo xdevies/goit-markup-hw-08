@@ -33,11 +33,7 @@ background-size: cover;
     margin-right:30px;  
 }
     
-.list-sec{
-    display: flex;
-    
-    
-}
+
 
 
 
@@ -46,6 +42,8 @@ background-size: cover;
     color:var(--accent-color)
 }
  
+
+
 
 .feature__list{
     @extend %flex-align;
@@ -88,6 +86,28 @@ letter-spacing: 0.03em;
 color:var(--p-color);
 max-width: 270px;
 }
+
+
+.feature-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    color: #F5F4FA;
+}
+
+
+
+
+.list-svg{
+    display: flex;
+   
+}
+
+.list-svg svg::not(:last-child){
+    margin-right:30px;  
+}
+
 
 .section-work_title{
     color: var(--primary-color);
