@@ -6,12 +6,12 @@
 .hero{
     
     background-color: var(--second-color);
-height: 600px;
-padding-top: 200px;
-padding-bottom: 200px;
+ height: 600px;
+ padding-top: 200px;
+ padding-bottom: 200px;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+ background-repeat: no-repeat;
+ background-size: cover;
  background-position: center;
  max-width: 1600px;
  margin-right: auto;
@@ -20,7 +20,31 @@ background-size: cover;
 }
 
 
+.hero__title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        .hero-title{
+            font-size: 44px;
+            line-height: 1.36;
+        }
+     }
+}  
+ 
     
+ 
+ 
+   
 
 
 
@@ -29,9 +53,7 @@ background-size: cover;
  
 }
 
-.list-sec li:not(:last-child){
-    margin-right:30px;  
-}
+
     
 
 
@@ -45,68 +67,6 @@ background-size: cover;
 
 
 
-.feature__list{
-    @extend %flex-align;
-    justify-content: center;
-     
-}
-
-
-.feature__item{
-   @extend %flex-align;
-    justify-content: center;
-width: 270px;
-height: 120px;
-background-color: var(--back-sec-color);
-   &:not(:last-child){
-    margin-right: 30px;
-}
-}
-
-
-
-.feature-list__title{
-    @extend %flex-align;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.1;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--title-color);
-margin-bottom: 10px;
-margin-top: 30px;
-}
-
-.feature-list__descrip{
-    display: flex;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color:var(--p-color);
-max-width: 270px;
-}
-
-
-.feature-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    color: #F5F4FA;
-}
-
-
-
-
-.list-svg{
-    display: flex;
-   
-}
-
-.list-svg svg::not(:last-child){
-    margin-right:30px;  
-}
 
 
 .section-work_title{
@@ -117,7 +77,9 @@ max-width: 270px;
 
 .work-section{
     padding-top: 0;
-    
+    @media screen and (max-width: 1199px) {
+        display: none;
+        } 
 }
 
 
