@@ -7,6 +7,8 @@
         border-bottom: 1px solid #ECECEC;
     }
     
+   
+
     .header-logo{
         display: block;
         margin-right: 95px;
@@ -20,7 +22,6 @@
     }
         
        
-    
 
     .logo{
         color: var(--accent-color);
@@ -129,12 +130,18 @@
         margin-left: auto;
         @extend %flex-align;
         gap: 50px;
+        // display: none;
     }
     
     
     
     .nav{
         @extend %flex-align;
+        justify-content: space-between;
+        width: 100%;
+        @media screen and (min-width: 768px){
+        justify-content: flex-start;
+        }
     }
     
     .icon-nav{
@@ -169,4 +176,43 @@
     }
     
    
-    
+    .menu-btn{
+        display: inline-flex;
+        margin: 0;
+        padding: 12px 8px;
+        border: none;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: 2;
+        @media screen and (min-width: 768px) {
+            display: none;
+            }
+    }
+
+    .menu-btn-close{
+        transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing-function);
+      color: #212121;;
+    }
+
+    .menu-btn-closehover, :focus{
+        fill: var(--accent-color);
+    }
+
+
+
+
+
+
+.menu-btn-open:hover, :focus{
+    fill: var(--accent-color);
+}
+
+    .menu-btn-open{
+        transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing-function);
+      color: #212121;;
+    }

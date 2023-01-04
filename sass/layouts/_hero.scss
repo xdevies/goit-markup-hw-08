@@ -9,34 +9,57 @@
  height: 600px;
  padding-top: 200px;
  padding-bottom: 200px;
- background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
+ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/bg_tel.jpg');
+
+ 
+ @include retina{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/bg_tel-2x.jpg');
+}
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
  max-width: 1600px;
  margin-right: auto;
  margin-left: auto;
- 
+  @media screen and (min-width:768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/bg_tablet.jpg');
+    @include retina{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/bg_tablet-2x.jpg');
+    }
+  }
+  @media screen and (min-width:1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
+    @include retina{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background-2x.jpg');
+    }
+  }
 }
 
 
 .hero__title{
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
     text-align: center;
-    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color:var(--primary-color);;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--primary-color);
- max-width: 696px;
- margin-left: auto;
- margin-right: auto;
+    @media screen and(min-width:1200px) {
+        
+         font-size: 44px;
+        line-height: 1.36;
+       
+    }
 }
     
  
  
-   
+
 
 
 
