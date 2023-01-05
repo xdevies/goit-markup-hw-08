@@ -48,9 +48,7 @@
     &__close,
     &__menu{
     fill: var(--title-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    @include transition();
     } 
     &__menu:hover, :focus{
     fill: var(--accent-color);
@@ -88,7 +86,7 @@
         width: 100%;
         &.is-open{
         display: block;
-        height: 100px;
+        height: 100vh;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -144,7 +142,7 @@
     .site-nav__link {
     display: block;
     text-align: start; 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: var(--title-color);
     font-weight: 500;

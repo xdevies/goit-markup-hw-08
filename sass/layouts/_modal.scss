@@ -5,6 +5,11 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);;
+    overflow-y: scroll;
+    padding: 93px 15px 94px 15px;
+    @media screen and (min-width: 768px) {
+        padding: 208px 159px 207px 159px; 
+      }
 }
 
 .backdrop.is-hidden{
@@ -14,25 +19,36 @@
 
 .modal{
     
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 528px;
+    // height: 581px;
     background-color: var(--primary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
      0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      
+      @media screen and (min-width: 480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 609px;
+        }
+        @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+        }
 }
 
 .modal .btn-closed{
 
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 101px;
+    right: 23px;
     @extend %flex-align;
     justify-content: center;
     width: 30px;
@@ -41,11 +57,16 @@
     cursor: pointer;
     background-color: var(--primary-color);
     border: 1px solid rgba(0, 0, 0, 0.1);;
+    @media screen and (min-width: 480px){
+        top: 8px;
+        right: 8px;
+    }
 }
 
 
 
 .btn-closed{
+    
     width: 18px;
     height: 18px;
     fill: var(--primary-logo-color);
@@ -56,6 +77,7 @@
     &:focus{
     fill: var(--accent-color);
 }
+
 }
 
 .form-title{
@@ -71,7 +93,7 @@ margin-bottom: 12px;
 }
 
 .form-item__input{
-  width: 448px;  
+  width: 100%;  
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
@@ -107,12 +129,20 @@ letter-spacing: 0.01em
 }
 
 .form-item_title{
+    @extend %flex-align;
+    margin-bottom: 0;
    font-weight: 400;
    font-size: 12px;
    line-height: 1.1;
    letter-spacing: 0.01em;
    color: var(--p-color);
     text-align: left;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px; 
+        }
+        @media screen and (max-width: 479px) {
+            display: block; 
+            }
 }
 
 .form-field{
@@ -149,16 +179,22 @@ padding-right: 40px;
 }
 
 .modal-link{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
     font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--accent-color);
+ font-weight: 400;
+ 
+ line-height: 24px;
+ letter-spacing: 0.03em;
+ color: var(--accent-color);
+ @media screen and (max-width: 479px) {
+    margin-top: 10px; 
+    }
 }
 
 .modal-text{
-    width: 448px;  
+    width: 100%;  
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 16px;
@@ -180,18 +216,30 @@ color: var(--accent-color);
     
 
 .checkbox-text{
-    font-size: 14px;
-    line-height: 24px;
+    
+    font-size: 12px;
+    line-height: 17px;
     letter-spacing: 0.03em;
     
     color: var(--p-color);
-    margin-left: 7px;
-   
+    margin-bottom: 0 ;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px; 
+        }
+        @media screen and (max-width: 479px) {
+            display: block; 
+            }
 }
 
 .checkbox-input{
+    position: static;
+    display: inline-block;
+    margin-right: 7px;
     width: 16px;
     height: 15px;
+    border-radius: 2px;
+    padding: 0;
+   
 }
 
 
@@ -239,5 +287,6 @@ color: var(--accent-color);
 .checkbox{
     @extend %flex-align;
     justify-content: center;
-   margin-top: 20px;
+     margin-bottom: 30px;
+   width: 100%;
 }
