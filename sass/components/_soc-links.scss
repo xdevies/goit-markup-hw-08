@@ -1,5 +1,15 @@
 .socials{
-    margin-left: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+       margin-bottom: 0;
+       margin-top: 5px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+        text-align: start;
+       }
 }
 
 .join-title{
@@ -16,6 +26,7 @@ margin-bottom: 20px;
 
 .social__list{
    @extend %flex-align;
+   justify-content: center;
 }
 
 

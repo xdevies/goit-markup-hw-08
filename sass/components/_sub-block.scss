@@ -1,7 +1,6 @@
 .sub-form__field{
-    display: flex;
-    flex-direction: column;
-    width: 358px;
+    
+    width: 100%;
     margin-left: auto;
     & label{
         color: var(--primary-color);
@@ -11,25 +10,38 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            text-align: start;  
+            }
     }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        width: 358px;
+        }
 }
 
 
 
 
 .sub-form__input{
-    width: 358px;
-height: 50px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: var(--second-color);
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 16px;
-padding-right: 0;
-color: var(--primary-color);
-
+    display: block;
+    width: 100%;
+ height: 50px;
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ border-radius: 4px;
+ background-color: var(--second-color);
+ padding-top: 15px;
+ padding-bottom: 15px;
+ padding-left: 16px;
+ padding-right: 0;
+ color: var(--primary-color);
+ @media screen and (min-width: 1200px) {
+    margin-bottom: 0;  
+    }
 }
 
 .sub-form__input::placeholder{
@@ -41,7 +53,9 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .sub-form__btn{
-    margin-left: 12px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     @extend %flex-align;
     justify-content: center;
     width: 200px;
@@ -64,14 +78,27 @@ color: rgba(255, 255, 255, 0.6);
     &:hover{
     background-color: #188ce8; 
 }
+@media screen and (min-width: 1200px) {
+    margin-left: 12px;  
+    }
 }
 
 
 .sub-form{
-    display: flex;
-    width: 570px;
-    margin-left: auto;
-    align-items: flex-end;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        width: 570px;
+        margin-left: 93px;
+        margin-right: 0;
+        align-items: flex-end;
+        }
 }
 
 .sub-form__icon{
