@@ -34,7 +34,7 @@ ul, ol {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -365,8 +365,7 @@ body {
   .auth-nav__link--mail {
     font-size: 14px;
     line-height: 1.14;
-    transition-property: fill;
-    transition-property: color;
+    transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
   }
@@ -376,6 +375,9 @@ body {
   }
 }
 
+.auth-nav__icon {
+  color: #757575;
+}
 @media screen and (max-width: 767px) {
   .auth-nav__icon {
     display: none;
@@ -388,7 +390,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__icon {
-    transition-property: fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
   }
@@ -468,8 +470,8 @@ body {
 .hero {
   background-color: var(--second-color);
   height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bg_tel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,6 +488,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bg_tablet.jpg");
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -496,6 +500,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -518,10 +524,16 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-color);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 

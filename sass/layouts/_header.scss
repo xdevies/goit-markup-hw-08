@@ -235,18 +235,18 @@
         }
         @media screen and (min-width: 1200px){
             margin-right: 40px;
-        transition-property: color,fill;
-        transition-duration: 250ms;
-        transition-timing-function: var(--timing-function);
-        letter-spacing: 0.02em;
-       color: var(--p-color); 
-       font-weight: 500;
-      font-size: 14px;
-       line-height: 1.1;
-        &:hover,
-        &:focus {
-        color: var(--accent-color);
-        fill: var(--accent-color);
+            transition-property: color,fill;
+         transition-duration: 250ms;
+         transition-timing-function: var(--timing-function);
+          letter-spacing: 0.02em;
+          color: var(--p-color); 
+          font-weight: 500;
+           font-size: 14px;
+          line-height: 1.1;
+          &:hover,
+          &:focus {
+           color: var(--accent-color);
+           fill: var(--accent-color);
         }}
         }
         .auth-nav__link--mail{
@@ -266,8 +266,10 @@
         @media screen and (min-width: 1200px){
         font-size: 14px;
         line-height: 1.14;
-        transition-property: fill;
-        @include transition();
+        
+        transition-property: color,fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function);
         &:hover,
         &:focus {
         color: var(--accent-color);
@@ -276,6 +278,7 @@
         }
     
         .auth-nav__icon{
+            color: #757575;
         @media screen and (max-width: 767px) {
         display: none;
         } 
@@ -283,9 +286,9 @@
         margin-right: 8px;
         } 
         @media screen and (min-width: 1200px){   
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: var(--timing-function);  
+        
+            @include transition();
+        
         }
         }
        /* SOC-NAV */
