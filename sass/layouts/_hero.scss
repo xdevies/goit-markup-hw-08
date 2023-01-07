@@ -4,9 +4,11 @@
 }
 
 .hero{
-    
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--second-color);
- height: 600px;
+ 
  padding-top: 118px;
  padding-bottom: 118px;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/bg_tel.jpg');
@@ -28,6 +30,8 @@
     }
     padding-top: 118px;
  padding-bottom: 118px;
+ min-width: 768px;
+        height: 400px;
   }
   @media screen and (min-width:1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../img/background.jpg');
